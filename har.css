@@ -1,0 +1,38 @@
+#hangarid {
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 50px;
+  border: 3px solid orange;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20pxs;
+  border-bottom-left-radius: 20px;
+}
+#tsagaan {
+  background-color: aqua;
+  text-align: end;
+  padding: 20px;
+  border: 2px solid black;
+}
+img {
+  height: 200px;
+  width: 300px;
+  image-orientation: ;
+}
+.city {
+  background-color: yellow;
+  text-align: justify;
+  padding: 30px;
+  border: 3px solid black;
+  margin-top: 0px;
+  width: 100px;
+  height: 90px;
+}
+.havar {
+  background-color: yellow;
+  text-align: justify;
+  padding: 30px;
+  border: 3px solid black;
+  margin-top: 0px;
+  width: 100px;
+  height: 150px;
+}
