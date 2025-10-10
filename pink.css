@@ -1,29 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 #aaw {
   height: 1024px;
   width: 1440px;
   background-color: #3f0065;
   border-radius: 24px;
   display: flex;
-  justify-content: end;
-  flex-direction: row;
-  padding: 64px;
-  gap: 64px;
+  justify-content: row;
+  font-family: "Poppins", sans-serif;
+  position: relative;
 }
-.child1 {
-  height: 100%;
+.aw {
+  height: 216px;
   width: 646px;
-  color: white;
-  justify-content: end;
-  align-items: end;
   font-size: 48px;
   font-weight: 700;
+  display: flex;
+  color: white;
+  position: absolute;
+  top: 63px;
+  left: 64px;
+}
+.ew {
+  height: 282px;
+  width: 451px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  top: 371px;
+  left: 64px;
+}
+.gurv {
+  width: 435px;
+  height: 78px;
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+.hoyr {
+  width: 451px;
+  height: 78px;
+  display: flex;
+  gap: 16px;
+  background-color: rgb(87 10 87 0.5);
+  border: 3px solid #a91079;
+  border-radius: 16px;
+  align-items: center;
+  opacity: 1;
+}
+.neg {
+  width: 399px;
+  height: 78px;
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+.ow {
+  height: 64px;
+  width: 288px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 916px;
+  margin-left: 88px;
 }
 .child2 {
-  height: 856px;
   width: 715px;
+  height: 896px;
+  display: flex;
+  background-color: white;
   border-radius: 24px;
-  background-color: #eeee;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 64px;
+  margin-left: 280px;
 }
-span {
+.ungu {
   color: #a91079;
+}
+.undaa {
+}
+.ah1 {
+  width: 604px;
+  height: 194px;
+}
+.ah2 {
+  width: 600px;
+  height: 242px;
+}
+.ah3 {
+  width: 315px;
+  height: 78px;
+  background-color: #a91079;
+  border-radius: 16px;
+}
+.aqua {
+  display: flex;
+  justify-content: space-between;
+  border-width: 3px solid black;
+  width: 604px;
+  height: 62px;
+  gap: 16px;
+}
+.sav {
+  width: 190.67px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+}
+.say1 {
+  background-color: #a91079;
 }
