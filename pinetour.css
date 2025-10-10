@@ -3,6 +3,7 @@
 }
 
 .nuur {
+  position: relative;
   width: 1440px;
   margin: 0 auto;
 }
@@ -19,12 +20,15 @@
   color: white;
 }
 #deer {
+  position: fixed;
+  top: 0;
   height: 100px;
-  width: 1200px;
+  width: 1440px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding-top: 20px;
 }
 #deer2 {
   display: flex;
@@ -41,6 +45,7 @@
   justify-content: space-between;
   width: 392px;
   height: 22px;
+  color: white;
 }
 #ene {
   display: flex;
@@ -72,8 +77,8 @@
   font-style: normal;
 }
 .hoyr {
-  height: 512px;
-  width: 100%;
+  height: 500px;
+  width: 1440px;
   background-image: url(./hoyr.png);
   background-position: center;
   background-size: cover;
@@ -98,8 +103,22 @@
   gap: 20px;
   display: flex;
   justify-content: center;
+  position: relative;
   align-items: center;
   box-shadow: 10px 10px #8bb8c1, -10px -10px #a4d1e2;
+}
+.layout {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0;
+  border-radius: 40px;
+}
+.layout:hover {
+  opacity: 0.4;
 }
 #hiid {
   height: 378px;
@@ -112,8 +131,35 @@
   gap: 20px;
   display: flex;
   justify-content: center;
+  position: relative;
   align-items: center;
   box-shadow: 10px 10px #8bb8c1, -10px -10px #a4d1e2;
+}
+.bugd {
+  height: 245px;
+  width: 245px;
+  position: absolute;
+  display: none;
+}
+.har {
+  top: 65px;
+  left: 912px;
+}
+.serhvv {
+  top: -46px;
+  left: 716px;
+}
+.borhvv {
+  top: 82px;
+  left: 583px;
+}
+.sarhvv {
+  top: -84px;
+  left: 532px;
+}
+.serhvv {
+  top: -80px;
+  left: 699px;
 }
 #huvsgul {
   height: 378px;
@@ -123,6 +169,7 @@
   background-size: cover;
   border-radius: 40px;
   padding: 20px;
+  position: relative;
   gap: 20px;
   display: flex;
   justify-content: center;
@@ -139,12 +186,13 @@
   padding: 20px;
   gap: 20px;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   box-shadow: 10px 10px #8bb8c1, -10px -10px #a4d1e2;
 }
 .gurv {
-  width: 100%;
+  width: 1440px;
   background-image: url(gazar.png);
   background-position: center;
   background-size: cover;
@@ -153,6 +201,7 @@
   justify-content: center;
   gap: 10px;
   text-align: center;
+  height: 1022px;
 }
 .des {
   font-size: 42px;
@@ -167,11 +216,21 @@
 }
 #tegsh {
   display: flex;
-  justify-content: center;
-  padding-left: 120px;
-  padding-right: 120px;
-  padding-top: 59px;
+  position: relative;
   gap: 40px;
+  width: 1200px;
+  height: 640px;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding-bottom: 59px;
+}
+#svv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1440px;
+  height: 204px;
 }
 #gadar2 {
   width: 647px;
@@ -189,7 +248,7 @@
   align-items: center;
   gap: 20px;
 }
-#aaw {
+.aaw1 {
   width: 453px;
   height: 112px;
   background: #eee9d9;
@@ -200,11 +259,18 @@
   align-items: center;
   padding-left: 30px;
   padding-right: 30px;
+  border: 4px solid transparent;
 }
-.ub {
+.aaw1:hover {
+  border-color: white;
+}
+.aaw1:hover ~ .har {
+  display: block;
+}
+.aaw2 {
   width: 453px;
   height: 112px;
-  background: #eee9d9;
+  background: #8bb8c1;
   border-radius: 120px;
   display: flex;
   justify-content: space-between;
@@ -212,6 +278,13 @@
   align-items: center;
   padding-left: 30px;
   padding-right: 30px;
+  border: 4px solid transparent;
+}
+.aaw2:hover {
+  border-color: white;
+}
+.aaw2:hover ~ .serhvv {
+  display: block;
 }
 .pinn {
   width: 14px;
@@ -242,19 +315,7 @@
   align-items: center;
   justify-content: center;
 }
-.bulgan {
-  width: 453px;
-  height: 112px;
-  background: #8bb8c1;
-  border-radius: 120px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.arkh {
+.aaw3 {
   width: 453px;
   height: 112px;
   background: #aad8d7;
@@ -265,8 +326,15 @@
   align-items: center;
   padding-left: 30px;
   padding-right: 30px;
+  border: 4px solid transparent;
 }
-.hangai {
+.aaw3:hover {
+  border-color: white;
+}
+.aaw3:hover ~ .borhvv {
+  display: block;
+}
+.aaw4 {
   width: 453px;
   height: 112px;
   background: #8bc0bd;
@@ -277,8 +345,15 @@
   align-items: center;
   padding-left: 30px;
   padding-right: 30px;
+  border: 4px solid transparent;
 }
-.dalai {
+.aaw4:hover {
+  border-color: white;
+}
+.aaw4:hover ~ .sarhvv {
+  display: block;
+}
+.aaw5 {
   width: 453px;
   height: 112px;
   background: #97cce0;
@@ -289,6 +364,34 @@
   align-items: center;
   padding-left: 30px;
   padding-right: 30px;
+  border: 4px solid transparent;
+}
+.aaw5:hover {
+  border-color: white;
+}
+.aaw5:hover ~ .serhvv {
+  display: block;
+}
+.pink {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+}
+.bair1 {
+  top: 42px;
+  left: 832px;
+}
+.bair2 {
+  top: 164px;
+  left: 660px;
+}
+.bair3 {
+  top: 181px;
+  left: 1045px;
+}
+.bair4 {
+  top: 416px;
+  left: 832px;
 }
 .durv {
   height: 1120px;
@@ -330,18 +433,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   padding: 0 120px;
 }
 #savd {
   padding-top: 79px;
   padding-bottom: 185px;
 }
-#card1 {
+.card {
   background-color: white;
   height: 527px;
   width: 384px;
   border-radius: 40px;
+  position: relative;
+}
+.card:hover {
+  height: 527px;
+  width: 384px;
+  border-radius: 40px;
+  box-shadow: -8px -8px #95ced8, 8px 8px #919191;
 }
 #pin2 {
   width: 36px;
@@ -437,17 +547,9 @@
   background-color: #a4d1e2;
   border-radius: 120px;
 }
-#card2 {
-  background-color: white;
-  height: 527px;
-  width: 384px;
-  border-radius: 40px;
-}
-#card3 {
-  background-color: white;
-  height: 527px;
-  width: 384px;
-  border-radius: 40px;
+.card:hover .select {
+  background-color: black;
+  color: white;
 }
 #buten {
   display: flex;

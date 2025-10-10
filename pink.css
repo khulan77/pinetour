@@ -1,0 +1,29 @@
+#aaw {
+  height: 1024px;
+  width: 1440px;
+  background-color: #3f0065;
+  border-radius: 24px;
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  padding: 64px;
+  gap: 64px;
+}
+.child1 {
+  height: 100%;
+  width: 646px;
+  color: white;
+  justify-content: end;
+  align-items: end;
+  font-size: 48px;
+  font-weight: 700;
+}
+.child2 {
+  height: 856px;
+  width: 715px;
+  border-radius: 24px;
+  background-color: #eeee;
+}
+span {
+  color: #a91079;
+}
